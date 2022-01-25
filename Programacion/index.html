@@ -1,0 +1,104 @@
+
+<html>
+    <head>
+        <title>⏩ PHP ⏪</title>
+
+    <style>
+
+     body{
+         background-color: black;
+     }
+     .flex-container > div {
+    background-color:rgb(151, 16, 16);
+    margin: 1%;
+    padding: 2%;
+   border:solid white;
+    width:30%;
+   text-align: center;
+}      
+div.centro {
+    width: 20%;
+    color:black;
+}
+.vertical-menu a {
+  background-color:rgb(121, 30, 30);
+  color: white;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  border:solid black 1px;
+  width: 15%;
+  text-align: center;
+}
+.vertical-menu a:hover {
+  background-color:  #da4040;
+}
+.vertical-menu a.active {
+  background-color: rgb(197, 47, 47);
+  color: white;
+}
+
+h1{
+    color: tomato;
+}s
+img {
+  border: solid #ddd;
+  padding:5px;
+  width: 255px;
+  height: 190px;
+}
+body {
+  background-image: url("php1.jpg");
+}
+    </style>
+    </head>
+    <body>
+        <h1>Practica 1</h1>
+        <hr>
+    
+        <div class="vertical-menu">
+        <a href="Practica0/index.html">Practica 0</a><br>
+        <a href="Practica1/index.html">Practica 1</a><br>
+        </div>
+        <hr>
+
+        <script>
+
+            function Historia() {
+            
+              var titulor = document.getElementById("id1").value;
+              var textor = document.getElementById("id2").value;
+              var imgr = document.getElementById("id3").value;
+            
+              document.getElementById("titulo").innerHTML = titulor;
+              document.getElementById("parrafo").innerHTML = textor;
+              document.getElementById("imagen").src = imgr;
+              document.getElementById("4").style.border = "1px solid black" ;
+              document.getElementById("4").style.fontSize = "60px" ;
+            }
+            
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            
+            </script>
+
+
+    </body>
+</html>
