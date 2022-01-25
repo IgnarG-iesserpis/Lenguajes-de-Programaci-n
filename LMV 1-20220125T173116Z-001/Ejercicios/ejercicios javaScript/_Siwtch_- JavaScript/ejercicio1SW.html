@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Sports</h1>
+
+<p>What equipment is needed? </p>
+<ol>
+
+<li> Football</li>
+<li> Volleyball</li>
+<li> Basketball</li>
+
+</ol>
+
+<p>Write a number:</p>
+<input id="num">
+<button onclick="calculate()">Apply</button>
+<p id="demo"> </p>
+
+<script>
+
+function calculate(){
+  var num = document.getElementById("num").value;
+  var text="";
+
+ 
+ switch (num) {
+  case "1":
+	text = "Football: ball, uniform, shin pad, shoes, socks... ";
+	break;
+  case "2":
+	text = "Volleyball: ball, net, knee and elbow pad, uniform, shoes, socks... ";
+	break;
+  case "3":
+	text = "Basketball: ball, basketball sneakers, socks, uniform...";
+	break;
+  default:
+ 	text="No value found";
+}
+
+  document.getElementById("demo").innerHTML=text;
+}
+
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ejercicio 15</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>Power</h1>
+
+<p>Base:</p>
+<input id="num1">
+<br>
+<p>Exponent:</p>
+<input id="num2">
+
+<button onclick="myFunction()">Calculate</button>
+    
+<p id="texto"></p>
+    
+<script>
+
+    function myFunction() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+
+        document.getElementById("texto").innerHTML = Math.pow(num1, num2);
+    }
+
+    </script>
+    
+    </body>
+    
+    </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<body>
+    
+	<h1>Convert</h1>
+
+<p>Currency I want to convert:</p>
+<input id="money"><span> € </span>
+
+<p>To:</p>
+
+<ol>
+
+<li> US Dollar</li>
+<li> Australian Dollar </li>
+<li> British Pound</li>
+<li> Japanese Yen</li>
+
+</ol>
+
+<p>Select an option. Please write a number from 1 to 4:</p>
+<input id="num">
+
+<button onclick="calculate()">Calculate</button>
+<p id="demo"> </p>
+
+<script>
+function calculate() {
+  var money = document.getElementById("money").value;
+  var num = document.getElementById("num").value;
+  var sol = 0;
+  var text = money+ " €  = ";
+
+if(money >0){
+ 
+ switch (num) {
+  case "1": //US Dollar
+	sol=money*1.12;
+	text += sol +" USD";
+	break;
+  case "2": //Australian Dollar
+	sol=money*1.6;;
+	text += sol +" AUD";
+	break;
+  case "3": //British Pound
+	sol=money*0.86;
+	text += sol +" GBP";
+	break;
+  case "4": //Japanese Yen
+	sol=money*124.77;
+	text += sol +" JPY";
+	break;
+  default:
+ 	text="Please select a valid option";  
+}
+ 
+ 
+  document.getElementById("demo").innerHTML=text;
+ 
+ }//if
+ else
+ document.getElementById("demo").innerHTML="Wrong input value";
+        	 
+
+         	 
+        	}
+    	</script>
+	</body>
+</html>
+
+

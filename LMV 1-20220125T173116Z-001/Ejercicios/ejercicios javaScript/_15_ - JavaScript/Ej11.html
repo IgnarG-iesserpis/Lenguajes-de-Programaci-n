@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 15</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+    
+    <h1>Second-handcar store</h1>
+    
+    <p>Write the brand you are looking for:</p>
+    
+    <input id="cars">
+    <button onclick="myFunction()">Search</button>
+        
+    <p id="texto1"></p>
+        
+    <script>
+    
+        function myFunction() {
+
+            var cars = document.getElementById("cars").value;
+            var marcas = ["Honda", "Seat", "BMW", "Audi", "Ford", "Volvo", "Mercedes", "Citroen", "Renaul"];
+            var respuesta;
+
+            for(i = 0; i < marcas.length() ; i++){
+            if(cars == marcas(i)){
+                respuesta = "Congratulations, we have vehicle of that brand";
+                 }else{
+                respuesta = "Sorry, we do not have that brand of vehicle";
+             } 
+            i = i + 1;
+            document.getElementById("texto1").innerHTML = respuesta;
+        }  
+    }
+        </script>
+        
+        </body>
+        
+        </html>

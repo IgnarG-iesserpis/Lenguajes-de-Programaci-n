@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<asignatura>
+   <geografia tipo="Mundial"/>
+   <pais>
+       <nombre>España</nombre>
+       <continente>Europa</continente>
+       <capital nombre="Madrid"/>
+     </pais>
+</asignatura>

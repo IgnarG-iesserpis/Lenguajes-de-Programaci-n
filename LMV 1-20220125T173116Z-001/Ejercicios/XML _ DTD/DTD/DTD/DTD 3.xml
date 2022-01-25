@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE people
+[
+<!ELEMENT  people (person)>
+
+<!ELEMENT person (name,birth_date,sex)>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT bith_date (#PCDATA)>
+
+<!ELEMENT sex (#PCDATA)>
+
+]>
+
+<people>
+
+    <person>
+    
+            <name>Antonio</name>
+            
+            <birth_date>27-11-2008</birth_date>
+            
+           <sex>Man</sex>
+           
+    </person>
+    
+</people>

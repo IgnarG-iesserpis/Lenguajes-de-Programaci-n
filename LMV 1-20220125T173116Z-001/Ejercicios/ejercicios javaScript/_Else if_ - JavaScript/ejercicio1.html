@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>-Alarm Clock APP Service-</h1>
+
+<p>Try a Day of the week</p>
+
+
+<input id="demo">
+
+<p>Pick a Clock</p>
+
+<input type="time"><br><br>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="result"></p>
+<script>
+
+function myFunction() {
+
+  //var Day = new Date().getDay(); 
+
+  var greeting;
+  var day =document.getElementById("demo").value;
+
+  if (day=="Monday" || day=="Tuesday" || day=="Wendesday" || day=="Thursday" || day=="Friday" || day=="Saturday") {
+      greeting = "The Alarm Clock is connected.";
+       
+      document.getElementById("result").innerHTML= greeting;
+      
+      } else if (day=="Sunday"){
+         greeting="It is not convenient using the alarm clock on Sunday";
+         document.getElementById("result").innerHTML= greeting;
+
+          }  else {
+             alert("Write a right Day");
+          }
+  
+  
+}
+</script>
+
+</body>
+</html>

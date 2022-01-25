@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+input {
+    width: 415px;;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Write a story</h1>
+
+<p>Insert the title of the story :</p>
+
+<input id="id1"> 
+
+<br>
+
+<p>Insert the story :</p>
+
+    <textarea id="id2" name="message" rows="10" cols="50"></textarea>
+
+    <br>
+
+<p>Insert the url of an image related with the story :</p>
+
+<input id="id3">
+<br><br>
+
+<button onclick="Historia()">Apply</button><br>
+
+<article id="4">
+
+  <h1 id="titulo"></h1>
+
+  <p id="parrafo"></p>
+
+  <img id="imagen" src=""> 
+
+</article>
+
+<script>
+
+  function Historia() {
+
+     var titulor = document.getElementById("id1").value;
+     var textor = document.getElementById("id2").value;
+     var imgr = document.getElementById("id3").value;
+
+     document.getElementById("titulo").innerHTML = titulor;
+     document.getElementById("parrafo").innerHTML = textor;
+     document.getElementById("imagen").src = imgr;
+     document.getElementById("4").style.border = "1px solid black" ;
+     document.getElementById("4").style.fontSize = "60px" ;
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h1>COMPLETE THE FOLLOWING SENTENCES:</h1>
+
+<p>Where<input id="id1">from?</p>
+<br>
+<p>What's<input id="id2">? It's an iPod.</p>
+<br>
+<p><input id="id3">your dad born in Madrid?</p>
+<br>
+<p>Today is<input id="id4">than yesterday.</p>
+<br><br>
+
+<button onclick="myFunction()">Check</button>
+
+<p id="fromr"></p>
+
+<p id="ipodr"></p>
+
+<p id="madridr"></p>
+
+<p id="todayr"></p>
+
+
+
+<script>
+
+function myFunction() {
+
+  var from = document.getElementById("id1").value;
+  var ipod = document.getElementById("id2").value;
+  var madird = document.getElementById("id3").value;
+  var today = document.getElementById("id4").value;
+
+
+  document.getElementById("fromr").innerHTML = Where are you from ? ;
+  document.getElementById("ipodr").innerHTML =  Whats this ? Its an iPod ;
+  document.getElementById("madridr").innerHTML = Was;
+  document.getElementById("todayr").innerHTML = today;
+  
+}
+
+</script>
+
+</body>
+</html>

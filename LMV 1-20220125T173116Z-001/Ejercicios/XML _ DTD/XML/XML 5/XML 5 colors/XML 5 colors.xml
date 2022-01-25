@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+ <colors> 
+   <combination result="orange">
+      <color>red</color>
+      <color>yellow</color>
+   </combination>
+   
+   <combination result="grey">
+      <color>black</color>
+      <color>white</color>
+   </combination>
+   
+   <combination result="light green">
+      <color>blue</color>
+      <color>yellow</color>
+      <color>white</color>
+   </combination>
+</colors>

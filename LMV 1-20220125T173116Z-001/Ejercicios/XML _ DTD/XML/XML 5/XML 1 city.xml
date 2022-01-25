@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<cities>
+
+   <city continent=”Asia”>
+        <name> New Delhi </name>
+        <country > India </continent>
+    </city>
+
+   <city continent=”Europe”>
+        <name> Lisbon</name>
+        <country > Portugal </continent>
+     </city>
+
+     <city continent=”Africa”>
+          <name> Cairo</name>
+          <country > Egypt</continent>
+       </city>

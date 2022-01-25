@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coches>
+<coches>
+   <coche>
+      <marca>Dacia</marca>
+      <nombre>Sandero</nombre>
+      <ciudad_de_fabricacion>Marruecos</ciudad_de_fabricacion>
+      <color pintura="Verde">
+      <precio>10.884 €</precio>
+      <cantidad_en_stock>100</cantidad_en_stock>
+      </color>
+   </coche>
+   
+   <coche>
+      <marca>Ferrari</marca>
+      <nombre>488 GTB</nombre>
+      <ciudad_de_fabricacion>Roma</ciudad_de_fabricacion>
+      <color pintura="Rojo">
+      <precio>258.237 €</precio>
+      <cantidad_en_stock>80</cantidad_en_stock>
+      </color>
+   </coche>
+   
+   <coche>
+      <marca>Kia</marca>
+      <nombre>Outlet</nombre>
+      <ciudad_de_fabricacion>Londres</ciudad_de_fabricacion>
+      <color pintura="Negro">
+      <precio>20.525 €</precio>
+      <cantidad_en_stock>120</cantidad_en_stock>
+      </color>
+   </coche>
+   
+   <coche>
+      <marca>Jeep</marca>
+      <nombre>Gladiator</nombre>
+      <ciudad_de_fabricacion>Madrid</ciudad_de_fabricacion>
+      <color pintura="Mate">
+      <precio>39.574 €</precio>
+      <cantidad_en_stock>50</cantidad_en_stock>
+      </color>
+      
+      <coche>
+      <marca>Lexus</marca>
+      <nombre>UX 250h</nombre>
+      <ciudad_de_fabricacion>Barcelona</ciudad_de_fabricacion>
+      <color pintura="Rojo Oscuro">
+      <precio>80.526 €</precio>
+      <cantidad_en_stock>20</cantidad_en_stock>
+      </color>
+   </coche>
+   </coche>
+</coches>
+   

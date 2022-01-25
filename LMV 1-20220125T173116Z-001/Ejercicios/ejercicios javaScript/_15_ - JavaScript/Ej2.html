@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ejercicio 15</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>SORT 3 NUMBERS</h1>
+
+<p>Write 3 numbers from 0 to 9:</p>
+
+<input id="num1">
+<br>
+<input id="num2">
+<br>
+<input id="num3">
+<br>
+
+<button onclick="myFunction()">Sort</button>
+    
+<p id="texto"></p>
+    
+<script>
+
+    function myFunction() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var num3 = document.getElementById("num3").value;
+        var hi=0, lo=0, mid=0;
+
+        if (num1>num2) {   
+      mid=num1;    
+      lo=num2;   
+   } else {
+      mid=num2;  
+      lo=num1;  
+   } 
+    if (mid>num3) { 
+      hi=mid;    
+      if(lo>num3){         
+         mid=lo;                
+         lo=num3;
+      }else {
+         mid=num3;      
+      }         
+   }else hi=num3; 
+
+
+        document.getElementById("texto").innerHTML = lo + mid + hi;
+    }
+
+    </script>
+    
+    </body>
+    
+    </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body id="body">
+<style>
+
+    #edad{
+        width: 40px;
+        height: 20px;
+    }
+
+</style>
+
+<h1>NightClub</h1>
+
+<h2>How old are you?</h2>
+
+<p>Age: <input type="text" id="edad"> years </p>
+
+<button onclick="myFunction()">Apply</button>
+<button type="reset" onclick="resetear()">Reset</button>
+
+<p id="texto"></p>
+
+<script>
+
+function myFunction() {
+    var age = document.getElementById("edad").value;
+
+    var respuesta;
+
+      if (age >= 18) {
+        respuesta = "Can access all places";
+
+        document.getElementById("body").style.backgroundColor = "green";
+
+    } else if (age > 0 && age < 18) { 
+
+        var wait = 18 - age;
+        respuesta = "Sorry, you can access the garden. you have to wait "+wait+" year(s) to access to all the rooms";
+
+        document.getElementById("body").style.backgroundColor = "red";
+    
+    } else {
+        respuesta = "Enter the correct values";
+    }
+
+    document.getElementById("texto").innerHTML = respuesta;
+}
+
+function resetear(){
+
+document.getElementById("edad").value = "";
+}
+
+</script>
+
+</body>
+</html>

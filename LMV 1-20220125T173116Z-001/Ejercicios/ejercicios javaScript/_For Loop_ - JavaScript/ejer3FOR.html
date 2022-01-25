@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Nacho Gracia Argente</title>
+
+</head>
+
+<body>
+
+<h1> Football Players</h1>
+
+<p id="demo"></p>
+
+<script>
+
+var jugadores = ["ramon","javi","jose","alberto","jorge","maria","marta","carla","lucia","jose2"];
+
+var mensage="";
+
+for(i = 0; i < jugadores.length; i++){
+
+    if(i%2==0)
+      
+mensage = mensage + (i+1) + ". " +"<span style=color:red>"+jugadores[i]+"</span> <br>";
+
+    else
+
+mensage = mensage + (i+1) + ". " +"<span style=color:blue>"+jugadores[i]+"</span> <br>";
+
+}
+
+
+
+
+document.getElementById("demo").innerHTML = mensage;
+
+</script>
+</body>
+</html>

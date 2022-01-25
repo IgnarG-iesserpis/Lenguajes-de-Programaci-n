@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ejercicio 15</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>EXAM</h1>
+
+<h3>Answer the following quiestions:</h3>
+
+<p>1. When was the discovery of America?</p>
+<input type="date" name="question1" id="q1">
+<br>
+
+
+<p>2.What is the title of the famous novel of George Orwell witch describes an omnipresent goverment surveillance?</p>
+<input type="number" name="question2" min="1" max="10000" id="q2">
+<br>
+
+
+<p>3.What was the most visited city in 2018 in the world?</p>
+
+<select id="q3">
+  <option name="name1" value="empty"> </option>
+  <option name="name1" value="....">.....</option>
+  <option name="name1" value="....">.....</option>
+  <option name="name1" value="...">.....</option>
+  <option name="name1" value="...">.....</option>
+</select>
+
+<p>4.Who was the most important king in the History?</p>
+  <input type="radio" name="name2" value="Genghis" id="q41">Genghis<br>
+  <input type="radio" name="name2" value="...." id="q42"> Philip II<br>
+  <input type="radio" name="name2" value="...." id="q43"> Louis XIV<br>  
+  <input type="radio" name="name2" value="...." id="q44"> Herny  VII<br>  
+  <input type="radio" name="name2" value="...." id="q45"> Julius<br>  
+
+<p>5.What is the secret of happiness?</p>
+  <input type="checkbox" name="name3" value="..." id="q51"> A kind of control...<br>
+  <input type="checkbox" name="name3" value="..." id="q52"> Appreciating simpler...<br>
+  <input type="checkbox" name="name3" value="..." id="q53"> Connecting thoufhts...<br>
+    <input type="checkbox" name="name3" value="..." id="q54">  Being present...<br>
+
+<button onclick="myFunction()">Check</button>
+    
+<p id="texto"></p>
+    
+<script>
+
+var q1 = document.getElementById("q1").value;
+
+var q2 = document.getElementById("q2").value;
+
+    var q3 = document.getElementById("q3").value;
+
+    var q41 = document.getElementById("q41").checked;
+    var q42 = document.getElementById("q42").checked;
+    var q43 = document.getElementById("q43").checked;
+    var q44 = document.getElementById("q44").checked;
+    var q45 = document.getElementById("q45").checked;
+   
+    var q51 = document.getElementById("q51").checked;
+    var q52 = document.getElementById("q52").checked;
+    var q53 = document.getElementById("q53").checked;
+    var q54 = document.getElementById("q54").checked;
+
+  
+</script>
+    
+</body>
+    
+</html>

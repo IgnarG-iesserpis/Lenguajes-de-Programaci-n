@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Areas</h1>
+
+<p>What geometric shape do you want? </p>
+<ol>
+
+<li> Triangle</li>
+<li> Rectangle </li>
+<li> Square</li>
+<li> Rhomboid</li>
+
+</ol>
+
+<p>Insert side/height length:</p>
+<input id="side"> <span> cm </span>
+<p>Write a base length:</p>
+<input id="base"><span> cm </span>
+
+<p>Select an option. Please write a number from 1 to 4:</p>
+<input id="num">
+<button onclick="calculate()">Calculate</button>
+<p id="demo"> </p>
+
+<script>
+
+function calculate(){
+  var side = document.getElementById("side").value;
+  var base = document.getElementById("base").value;
+  var num = document.getElementById("num").value;
+  var area = 0;
+  var text = "The area is ";
+
+ if(side >0 && base>0){
+ 
+ switch (num) {
+  case "1": //triangle
+	area=(base*side)/2;
+	text += area +" cm2";
+	break;
+    
+  case "2"://rectangle
+  case "3"://square
+  case "4"://rhomboid
+	area=(base*side);
+	text += area +" cm2";
+	break;
+    
+  default:
+ 	text="Please select a valid option";  
+}
+ 
+ 
+  document.getElementById("demo").innerHTML=text;
+ 
+ }//if
+ else
+ document.getElementById("demo").innerHTML="Wrong input values";
+        	 
+}
+
+</script>
+
+
+</body>
+</html>
+

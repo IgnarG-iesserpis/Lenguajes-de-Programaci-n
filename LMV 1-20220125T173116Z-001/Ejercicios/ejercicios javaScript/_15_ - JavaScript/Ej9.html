@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ejercicio 15</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>Factorial</h1>
+
+<p>Write a number and press the button to calculate the factorial (n!):</p>
+<br>
+<input id="num1">
+
+
+<button onclick="myFunction()">Calculate</button>
+    
+<p id="texto"></p>
+    
+<script>
+
+    function myFunction() {
+    var num1 = document.getElementById("num1").value;
+    var resultado = 1;
+
+    for(var i=1; i<=num1; i++) {
+    resultado *= i;
+    }
+    document.getElementById("texto").innerHTML = resultado;
+}
+
+
+    </script>
+    
+    </body>
+    
+    </html>

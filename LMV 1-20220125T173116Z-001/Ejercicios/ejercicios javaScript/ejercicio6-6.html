@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    <title>Randomize</title>
+
+</head>
+
+<body>
+
+<h1>JavaScript Math.Random()</h1>
+
+<h3>Write a range of integer numbers</h3>
+
+<p>Write the minimun number</p>
+
+<p><input type="number" id="min"></p>
+
+<p>Write the maximum number</p>
+
+<p><input type="number" id="max"></p>
+
+<button type="button" onclick="funcion1()">Generate random number</button>
+<p id="demo"></p>
+
+
+<script>
+
+    function funcion1(){
+
+        var maximo = Math.max(document.getElementById("max").value,document.getElementById("min").value);
+        var minimo = Math.min(document.getElementById("min").value,document.getElementById("max").value);
+        var elemento = document.getElementById("demo");
+        var subtotal = Math.random() * (maximo - minimo);
+        var total = ((Math.floor(subtotal)) + minimo);
+        elemento.innerHTML = total;
+    }
+
+</script>
+
+</body>
+
+</html> 

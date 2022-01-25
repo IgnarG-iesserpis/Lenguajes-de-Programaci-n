@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<information> 
+  <page>
+    <titulo>Tutorials point</titulo>
+    <texto>Computin tutorials</texto>
+    <web link="https://www.tutorialspoint.com/"></web>
+    </page>
+ 
+  <page>
+    <titulo>Wikipedia</titulo>
+    <texto>A free encyclopedia</texto>
+    <web link="http://www.wikipedia.org/"></web>
+    </page>
+ 
+  <page>
+    <titulo>W3C</titulo>
+    <texto>World Wide Web Consortium</texto>
+    <web link="http://www.w3.org/"></web>
+    </page>
+    
+ </information>

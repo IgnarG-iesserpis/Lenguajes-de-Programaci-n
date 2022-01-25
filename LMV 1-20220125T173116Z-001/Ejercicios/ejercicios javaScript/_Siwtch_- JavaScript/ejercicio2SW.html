@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Snacks</h1>
+
+<p>What do you want? </p>
+<ol>
+
+<li> Apple</li>
+<li> Banana</li>
+<li> Donut</li>
+
+</ol>
+
+<p>Write a number:</p>
+<input id="num">
+<button onclick="calculate()">Apply</button>
+<p id="demo"> </p>
+
+<script>
+
+function calculate(){
+  var num = document.getElementById("num").value;
+  var text="";
+
+ 
+ switch (num) {
+  case "1":
+	text = "Apple: 0.70€";
+	break;
+  case "2":
+	text = "Banana: 1.50€";
+	break;
+  case "3":
+	text = "Donut: 1€";
+	break;
+  default:
+ 	text="No value found";
+}
+ 
+ 
+  document.getElementById("demo").innerHTML=text;
+ 
+        	 
+}
+
+</script>
+
+
+</body>
+</html>

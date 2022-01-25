@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="Exam" content="Exam dy 5">
+    <meta autor="Nacho Gracia">
+
+
+<title>Nacho Gracia Argente</title>
+</head>
+<style>
+
+.flex-container {
+  display: flex;
+  border: solid black;
+}
+
+    
+div{
+	width: 350px;
+	height: 550px;
+	background-color:white;
+    border:solid red;
+    text-align: center;
+    
+}
+
+img {
+    width: 100px;
+    height: 90px;
+    border:solid greenyellow;
+    padding: 15px;
+    background-color: salmon ;
+
+}
+
+p{
+    background-color: seagreen;
+    border: sienna;
+    margin: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+<section class="flex-container">
+
+<!-- This is a figure 1 -->
+
+<div>
+<h1> Volumne of sphere</h1>
+<img src="sphere.png" alt="Sphere">
+<p>Sphere</p>
+<h3>Radius</h3>
+<input type="number" id="radiovalor"><br>
+<button onclick="sphere()">Calculate</button>
+<p id="resultado1"></p>
+
+</div>
+
+<!-- This is a figure 2 -->
+
+<div>
+<h1> Volumne of a rectangular cuboid</h1>
+<img src="cuboid.png" alt="Cuboid">
+<p>Rectangular cuboid</p>
+<h3>Length</h3>
+<input type="number" id="leng"><br>
+<h3>Width</h3>
+<input type="number" id="wid"><br>
+<h3>Height</h3>
+<input type="number" id="hei"><br>
+<button onclick="rectangular()">Calculate</button>
+<p id="resultado2"></p>
+</div>
+
+<!-- This is a figure 3 -->
+
+<div>
+<h1> Volumne of a pyramid</h1>
+<img src="pyramid.png" alt="Pyramid">
+<p>Pyramid</p>
+<h3>Side</h3>
+<input type="number" id="base"><br>
+<h3>Height</h3>
+<input type="number" id="heig"><br>   
+<button onclick="pyramid()">Calculate</button>
+<p id="resultado3"></p>
+</div>
+
+<!-- This is a figure 4 -->
+
+<div>
+<h1> Volumne of sa regular hexahedron(cube)</h1>
+<img src="hexahedron.png" alt="Cube">
+<p>Cube</p>
+<h3>Side</h3>
+<input type="number" id="lado"><br>
+<button onclick="hexahedron()">Calculate</button>
+<p id="resultado4"></p>
+</div>
+
+</section>
+
+<script>
+
+
+function sphere() {
+
+var radio=document.getElementById("radiovalor").value;
+
+var volumen=(4/3)*Math.PI*radio*radio*radio;
+
+document.getElementById("resultado1").innerHTML=volumen;
+
+}
+
+function rectangular() {
+
+var leng=document.getElementById("leng").value;
+var wid=document.getElementById("wid").value;
+var hei=document.getElementById("hei").value;
+
+var volumen=leng*wid*hei;
+
+document.getElementById("resultado2").innerHTML=volumen;
+
+}
+
+function pyramid() {
+
+var base=document.getElementById("base").value;
+var heig=document.getElementById("heig").value;
+
+var volumen=(1/3)*base*base*heig;
+
+document.getElementById("resultado3").innerHTML=volumen;
+
+}
+
+function hexahedron() {
+
+var lado =document.getElementById("lado").value;
+
+var volumen=lado*lado*lado;
+
+document.getElementById("resultado4").innerHTML=volumen;
+
+}
+
+</script>
+</body>
+</html>

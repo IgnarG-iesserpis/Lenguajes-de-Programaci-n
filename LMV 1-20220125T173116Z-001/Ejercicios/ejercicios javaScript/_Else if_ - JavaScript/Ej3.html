@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+    #hora1 {
+        width: 80px;
+        height: 20px;
+    }
+    #minuto1 {
+        width: 80px;
+        height: 20px;
+    }
+</style>
+
+<h1>Greeting APP</h1>
+
+<p>What time is it?</p>
+
+<input type="text" id="hora1">
+:
+<input type="text" id="minuto1">
+
+<button onclick="myFunction()">Apply</button>
+
+<p id="texto"></p>
+
+<script>
+
+function myFunction() {
+    var hora = document.getElementById("hora1").value;
+
+    var incorrecto;
+
+      if (hora >= 0 && hora < 12) {
+        incorrecto = "Good morning";
+    } else if (hora >= 12 && hora < 18) {
+        incorrecto = "Good afternoon";
+    } else if (hora >=20 && hora <= 24){
+        incorrecto = "Good night";
+    } else {
+        incorrecto = "Introduzca correctamente la hora";
+    }
+
+    document.getElementById("texto").innerHTML = incorrecto;
+}
+
+
+</script>
+
+</body>
+</html> 

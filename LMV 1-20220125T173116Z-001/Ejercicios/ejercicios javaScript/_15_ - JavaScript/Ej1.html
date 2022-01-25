@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ejercicio 15</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>PALINDROME</h1>
+
+<p>Write 4 numbers from 0 to 9:</p>
+
+<input id="pos1">
+<br>
+<input id="pos2">
+<br>
+<input id="pos3">
+<br>
+<input id="pos4">
+<br>
+<button onclick="myFunction()">Check</button>
+    
+<p id="texto"></p>
+    
+<script>
+
+    function myFunction() {
+        var pos1 = document.getElementById("pos1").value;
+        var pos2 = document.getElementById("pos2").value;
+        var pos3 = document.getElementById("pos3").value;
+        var pos4 = document.getElementById("pos4").value;
+      
+        var respuesta;
+
+        if((pos1 == pos4) && (pos2 == pos3)){
+            respuesta = "Es un Palindrome";
+        }else{
+            respuesta = "No es un Palindrome";
+        }
+
+        document.getElementById("texto").innerHTML = respuesta;
+    }
+
+    </script>
+    
+    </body>
+    
+    </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+</style>
+
+<h1>Date check</h1>
+
+<p>Insert the value of the market basket:</p>
+
+<input type="text" id="valor">
+
+<button onclick="myFunction()">Apply</button>
+
+<p id="texto"></p>
+
+<script>
+
+function myFunction() {
+    var money = document.getElementById("valor").value;
+
+    var respuesta;
+
+      if (money <= 30) {
+
+        respuesta = "Buy more or we will charge the abusive 30€ of shipping costs";
+
+
+    } else if (money >= 90) { 
+
+        respuesta = "Congratulations! Shipping costs included. Come back soon!";
+
+        document.body.style.backgroundColor = "purple"
+
+    } else if (money >=30 || money < 90) { 
+
+        var discount = (90 - money);
+         
+        respuesta = "With only "+discount+" € more you can have free shipping costs !!! ";
+
+    } else {
+        respuesta = "Enter the correct values";
+    }
+
+    document.getElementById("texto").innerHTML = respuesta;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+
+    #dinero{
+        width: 40px;
+        height: 20px;
+    }
+
+    #temperatura{
+        width: 40px;
+        height: 20px;
+    }
+
+</style>
+
+<h1>Travel Agency</h1>
+
+<h2>Where do you like to go on holidays?</h2>
+
+<p>Complete the following indormation and we can try to help you:</p>
+
+<p>Budget: <input type="text" id="dinero"> € </p>
+
+<p>Temperature: <input type="text" id="temperatura"> ºC </p>
+
+<button onclick="myFunction()">Apply</button>
+<button type="reset" onclick="resetear()">Reset</button>
+
+<p id="texto"></p>
+
+<script>
+
+function myFunction() {
+    var money = document.getElementById("dinero").value;
+    var temperature = document.getElementById("temperatura").value;
+
+    var respuesta;
+
+      if (money >= 2000 && temperature <= 29) {
+        respuesta = "You can go to Japan, Spain, France, Italy... ";
+    } else if (money <=1999 && temperature >= 30) {
+        respuesta = "You can go to India, Saudi Arabia, Turkey...";
+    } else {
+        respuesta = "Enter the correct values"
+    }
+
+    document.getElementById("texto").innerHTML = respuesta;
+}
+
+function resetear(){
+
+document.getElementById("dinero").value = "";
+document.getElementById("temperatura").value = "";
+
+}
+
+</script>
+
+</body>
+</html>

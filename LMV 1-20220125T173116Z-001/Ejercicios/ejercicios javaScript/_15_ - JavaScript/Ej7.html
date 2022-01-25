@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ejercicio 15</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>Prime  numbers</h1>
+
+<p>Insert a number and check if it is a prime number:</p>
+
+<input id="num1">
+
+<button onclick="myFunction()">Check</button>
+    
+<p id="texto"></p>
+    
+<script>
+
+function myFunction() {
+        var num1 = document.getElementById("num1").value;
+        var primo;
+        var respuesta;
+        i=0;
+        primo=true;
+
+        for(i=2;i<num1;i++){
+            if(num1 % 1==0){
+                primo=false;
+            }
+        }
+
+        if(primo==true){
+            respuesta = "El numero " + num1 + " es primo"
+        }else{
+            respuesta = "El numero " + num1 + " no es primo"
+        }
+
+        document.getElementById("texto").innerHTML = respuesta;
+    }
+
+    </script>
+    
+    </body>
+    
+    </html>

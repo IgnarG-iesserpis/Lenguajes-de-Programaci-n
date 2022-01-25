@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+</style>
+
+<h1>Date check</h1>
+
+<p>Enter the day number:</p>
+
+<input type="text" id="valor1" value="25">
+
+<p>Enter the month:</p>
+
+<input type="text" id="valor2" value="August">
+
+<p>Enter the year number:</p>
+
+<input type="text" id="valor3" value="1900">
+
+<button onclick="myFunction()">Check</button>
+
+<p id="texto"></p>
+
+<script>
+
+function myFunction() {
+    var numero1 = document.getElementById("valor1").value;
+    var numero2 = document.getElementById("valor2").value;
+    var numero3 = document.getElementById("valor3").value;
+
+    var respuesta1;
+
+      if (numero1 >=1 && numero1 <=31) {
+
+        respuesta1 = "";
+
+    } else {
+        respuesta3 = "Introduzca un valor correcto";
+    }
+
+    var respuesta2;
+
+      if (numero2 == "January"  || numero2 == "March" 
+        || numero2 == "April"   || numero2 == "May" 
+        || numero2 == "June"    || numero2 == "July" 
+        || numero2 == "August"  || numero2 == "September" 
+        || numero2 == "October" || numero2 == "November" || numero2 == "December") {
+
+        respuesta2 = "";
+
+    } else {
+        respuesta2 = "Introduzca un valor correcto";
+    }
+
+    var respuesta3;
+
+      if (numero3 >=1000 && numero3 <=3000) {
+
+        respuesta3 = "";
+
+    } else {
+        respuesta3 = "Introduzca un valor correcto";
+    }
+
+    document.getElementById("texto").innerHTML = "Date:" + respuesta1 + respuesta2 + respuesta3 ;
+
+}
+
+</script>
+
+</body>
+</html>

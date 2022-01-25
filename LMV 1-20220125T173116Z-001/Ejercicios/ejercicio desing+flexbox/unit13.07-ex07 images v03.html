@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+  
+    
+  
+.violet {background-color: violet;}
+.pink {background-color: pink;}
+.red {background-color: red;}
+.blue {background-color: blue;}
+.green {background-color: green;}
+.yellow {background-color: yellow;}
+.purple {background-color: purple;}    
+    
+    
+    
+    
+
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.col-s-1 {width: 8.33%;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-3 {width: 25%;}
+	.col-s-4 {width: 33.33%;}
+	.col-s-5 {width: 41.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-7 {width: 58.33%;}
+	.col-s-8 {width: 66.66%;}
+	.col-s-9 {width: 75%;}
+	.col-s-10 {width: 83.33%;}
+	.col-s-11 {width: 91.66%;}
+	.col-s-12 {width: 100%;}
+   
+}  	 
+ 
+        
+@media only screen and (min-width: 1024px) {
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	 
+}
+
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    }
+    
+    
+
+    
+    
+.container > article {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+</style>
+</head>
+<body>
+
+
+
+
+<div class="container">
+
+
+
+    <article  class="violet col-3 col-s-6">
+        <p>one</p>
+        <img src="galileo.jpg" alt="Galileo" style="width:100%;height:auto;"> 
+        <p>one</p>
+        <p>one</p>
+
+    </article>
+   
+
+
+
+    <article class="pink col-3 col-s-6">
+        <p>two</p>
+        <img src="rio.jpg" alt="Rio"style="width:80%;height:auto;"> 
+        <p>two</p>
+        <p>two</p>
+
+
+
+
+    </article>
+
+    
+    
+    
+    <article class="red col-3 col-s-6">
+        <p>three</p>
+        <img src="molinos.jpg" alt="Molinos" style="width:80%;height:auto;"> 
+        <p>three</p>
+        <p>three</p>
+
+
+
+    </article>
+    
+    
+    
+    <article class="blue col-3 col-s-6">
+        <p>four</p>
+        <img src="jupiter.jpg" alt="Jupiter" style="width:80%;height:auto;">
+        <p>four</p>
+        <p>four</p>
+
+
+
+    </article>
+    
+    
+    
+    
+     <article class="green col-3 col-s-6">
+        <p>five</p>
+        <img src="central.jpg" alt="Central" style="width:80%;height:auto;">
+        <p>five</p>
+        <p>five</p>
+    </article>
+    
+    <article class="yellow col-3 col-s-6">
+        <p>six</p>
+        <img src="toronto.jpg" alt="Toronto" style="width:80%;height:auto;">
+        <p>six</p>
+        <p>six</p>
+
+    </article>
+    
+     <article class="purple col-3 col-s-6">
+        <p>seven</p>
+        <img src="osos.jpg" alt="Osos" style="width:80%;height:auto;">
+        <p>seven</p>
+        <p>seven</p>
+    </article>
+      
+</div>
+    
+   
+   
+</body>
+</html>

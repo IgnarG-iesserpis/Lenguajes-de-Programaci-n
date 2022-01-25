@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ejercicio 15</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>Quadratic equation</h1>
+
+<p>Complet the valuesto solve the equation: ax² + bx + c = 0 </p>
+
+<input id="num1"> x² + <input id="num2"> x + <input id="num3"> = 0
+<br>
+<button onclick="myFunction()">Solve</button>
+    
+<p id="texto"></p>
+    
+<script>
+
+    function myFunction() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var num3 = document.getElementById("num3").value;
+    
+        var respuesta = (-num2 + sqrt(num2 ^ 2 - 4 * num1 * num3)) / (2 * num1);
+
+        document.getElementById("texto").innerHTML = respuesta;
+    }
+
+    </script>
+    
+    </body>
+    
+    </html>

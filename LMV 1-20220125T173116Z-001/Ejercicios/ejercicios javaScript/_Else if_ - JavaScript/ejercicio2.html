@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>-Parking APP-</h1>
+
+<p>What kind of vehucle do you have?</p>
+
+<input id="demo">
+
+<button onclick="myFunction()">Apply</button>   <button onclick="Reset()">Reset</button>
+
+<p id="vehicle"></p>
+
+<script>
+
+function myFunction() {
+
+  var greeting;
+  var vehicle =document.getElementById("demo").value;
+
+  if (vehicle=="Motorcycle" || vehicle=="Car") {
+      greeting = "Please go to floor 1";
+       
+      document.getElementById("vehicle").innerHTML= greeting;
+      
+      } else{
+         greeting="Please go to floor 2";
+         document.getElementById("vehicle").innerHTML= greeting;
+
+          }  
+}
+ function Reset(){
+
+    document.getElementById("demo").value="";
+
+ }
+</script>
+
+</body>
+</html>

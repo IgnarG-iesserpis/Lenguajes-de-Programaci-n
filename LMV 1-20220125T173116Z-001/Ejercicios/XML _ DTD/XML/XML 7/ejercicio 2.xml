@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<canciones>
+ <cancion>
+  <title>Empire Burlesque</title>
+  <artist>Bob Dylan</artist>
+  <country>USA</country>
+  <company>Columbia</company>
+  <price>10.90</price>
+  <year>1985</year>
+ </cancion>
+ <cancion>
+  <title>Hide your heart</title>
+  <artist>Bonnie Tyler</artist>
+  <country>Uk</country>
+  <company>CBS Records</company>
+  <price>9.90</price>
+  <year>1989</year>
+ </cancion>
+ <cancion>
+  <title>Greatest Hits</title>
+  <artist>Dolly Parton</artist>
+  <country>USA</country>
+  <company></company>
+  <price>10.90</price>
+  <year>1985</year>
+ </cancion>
+ <cancion>
+  <title>Still got the blues</title>
+  <artist>Gary Moore</artist>
+  <country>UK</country>
+  <company>Virgin records</company>
+  <price>10.20</price>
+  <year>1990</year>
+ </cancion>
+ <cancion>
+  <title> One night only</title>
+  <artist>Bee Gees</artist>
+  <country>UK</country>
+  <company>Polydor</company>
+  <price>10.90</price>
+  <year>1998</year>
+ </cancion>
+</canciones>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 15</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+    
+    <h1>Cities</h1>
+    
+    <p>Inset the names of five cities:</p>
+    
+    <input id="name1">
+    <br><br>
+
+    <input id="name2">
+    <br><br>
+
+    <input id="name3">
+    <br><br>
+
+    <input id="name4">
+    <br><br>
+
+    <input id="name5">
+    <br><br>
+
+    <button onclick="myFunction()">Save and reverse</button>
+        
+    <p id="texto1"></p>
+    <p id="texto2"></p>
+        
+    <script>
+    
+        function myFunction() {
+            var name1 = document.getElementById("name1").value;
+            var name2 = document.getElementById("name2").value;
+            var name3 = document.getElementById("name3").value;
+            var name4 = document.getElementById("name4").value;
+            var name5 = document.getElementById("name5").value;
+            
+            var normal = [name1, name2, name3, name4, name5];
+            document.getElementById("texto1").innerHTML = normal;
+
+            var reverse = normal.reverse();
+            document.getElementById("texto2").innerHTML = reverse;
+        }
+    
+        </script>
+        
+        </body>
+        
+        </html>
