@@ -57,48 +57,10 @@ body {
         <hr>
     
         <div class="vertical-menu">
-        <a href="Programacion/">C++</a><br>
-        <a href="Página Web Propia/">PHP</a><br>
+        <a href="Programacion/">Programación</a><br>
+        <a href="Página Web Propia/">Página WEB</a><br>
         </div>
         <hr>
-
-        <script>
-
-            function Historia() {
-            
-              var titulor = document.getElementById("id1").value;
-              var textor = document.getElementById("id2").value;
-              var imgr = document.getElementById("id3").value;
-            
-              document.getElementById("titulo").innerHTML = titulor;
-              document.getElementById("parrafo").innerHTML = textor;
-              document.getElementById("imagen").src = imgr;
-              document.getElementById("4").style.border = "1px solid black" ;
-              document.getElementById("4").style.fontSize = "60px" ;
-            }
-            
-            //Get the button
-            var mybutton = document.getElementById("myBtn");
-            
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
-            }
-            
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-            }
-            
-            </script>
-
 
     </body>
 </html>
