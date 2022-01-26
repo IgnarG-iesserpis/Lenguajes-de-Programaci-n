@@ -12,7 +12,7 @@ background-color:#fff2e6;
 border: solid black 10px;
 }
 
-.h2{
+#h2{
  
 background-color: #d8914f;
 border: solid black 8px;
@@ -32,7 +32,7 @@ Puedes encontrarlo aquí : https://www.programarya.com/Cursos/C++/Sistema-de-Tip
 
 </p>
 
-<h2>¿Cómo crear y ejecutar un proyecto en Visual C++</h2>
+<h2 id=h2>¿Cómo crear y ejecutar un proyecto en Visual C++</h2>
 <p>En la mayoría de los entornos de desarrollo el proceso es bastante similar, pero aquí explicaré los detalles relevantes de esto, para que al momento de crear un proyecto, tú mismo, comprendas qué puedes cambiar cuándo y para qué.
     Como primer paso, necesitamos abrir nuestro entorno de desarrollo, de modo que según nuestro sistema operativo, deberíamos seguir una ruta como la siguiente. Vamos a: Inicio » Todos los Programas » Microsoft Visual Studio Express » Microsoft Visual C++.
              </p>
@@ -72,11 +72,24 @@ Puedes encontrarlo aquí : https://www.programarya.com/Cursos/C++/Sistema-de-Tip
 <br>
 <p>Una vez pegado el código, podremos ejecutar nuestro primer programa en C++ presionando F5. AL ejecutarlo se nos mostrará una ventana negra que es del símbolo del sistema (DOS o CMD), escribiendo Hola Mundo y una línea más abajo Press any key to continue. Para salir presionamos cualquier tecla y nuestro programa finalizará su ejecución.
 </p>
-<h2>cOMENTARIOS EN C++</h2>
+<h2 id=h2>COMENTARIOS EN C++</h2>
 <p>Comentarios de Una Sola Línea: Pueden ser colocados en cualquier parte y comienzan por un doble slash "//", al colocar el doble slash al comienzo de cualquier línea de código, todo lo que halla de ahí en adelante en esa misma línea será tomado como comentario, ten en cuenta que el doble slash solo convierte en comentario al texto que halla después de el y que pertenezca a su misma línea, las líneas de abajo de este, no se verán afectadas.
 </p>
 <p>Comentarios Multi-línea: Van cerrados entre "/*" y "*/". Estos comentarios son similares a los anteriores, pero deben tener un comienzo y un fin
 </p>
 <p><img src="comentarios.png">B</p>
+
+<h2 id=h2>ESTRUCTURA BÁSICA DE C++</h2>
+<p>El programa que vamos a realizar simplemente le dará a una variable el valor del resultado de sumar 5 + 5, cabe resaltar que en pantalla no se muestra nada por lo que la ejecución del programa será prácticamente instantánea
+  Este es nuestro programa:
+  </p>
+  <p>int main()<br>
+    {<br>
+        int numero;<br>
+        numero = 5 + 5;<br>
+        return 0;<br>
+    }<br>
+    </p>
+    <p><img ssrc="c++.png">C</p>
   </boody>
 </html>
