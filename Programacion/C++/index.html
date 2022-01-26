@@ -1,109 +1,66 @@
 
-<html>
-    <head>
-        <title>⏩ EJERCICIOS VARIOS DE PHP-JAVASCRIPT-C++-HTML ⏪</title>
-
-    <style>
-
-     body{
-         background-color: black;
-     }
-     .flex-container > div {
-    background-color:rgb(151, 16, 16);
-    margin: 1%;
-    padding: 2%;
-   border:solid white;
-    width:30%;
-   text-align: center;
-}      
-div.centro {
-    width: 20%;
-    color:black;
-}
-.vertical-menu a {
-  background-color:rgb(121, 30, 30);
-  color: white;
-  display: block;
-  padding: 20px;
-  text-decoration: none;
-  border:solid black 1px;
-  width: 15%;
-  text-align: center;
-}
-.vertical-menu a:hover {
-  background-color:  #da4040;
-}
-.vertical-menu a.active {
-  background-color: rgb(197, 47, 47);
-  color: white;
+<html lang="es">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <title>⏩C++⏪</title>
+ 
+</head>
+<style>
+#h1 {  
+background-color:#fff2e6;
+border: solid black 10px;
 }
 
-h1{
-    color: tomato;
-}s
-img {
-  border: solid #ddd;
-  padding:5px;
-  width: 255px;
-  height: 190px;
-}
-body {
-  background-image: url("php1.jpg");
-}
-    </style>
-    </head>
-    <body>
-        <h1>⏩ EJERCICIOS VARIOS DE PHP-JAVASCRIPT-C++-HTML ⏪</h1>
-        <hr>
+</style>
+<body>
     
-        <div class="vertical-menu">
-            <a href="C++/index.html">C++</a><br>
-            <a href="PHP/index.html">PHP</a><br>
-            <a href="HTML/index.html">-HTML-</a><br>
-            <a href="JAVASCRIPT/index.html">JAVASCRIPT</a><br>
-            <a href="PHP">???</a><br>
-            <a href="XML & DTD/index.html">XML & DTD</a><br>
-            </div>
-            
-            <hr>
+    <h1 id=h1>Visual C++ (Visual Studio):</h1>
+<hr>
 
-        <script>
+<p>    
 
-            function Historia() {
-            
-              var titulor = document.getElementById("id1").value;
-              var textor = document.getElementById("id2").value;
-              var imgr = document.getElementById("id3").value;
-            
-              document.getElementById("titulo").innerHTML = titulor;
-              document.getElementById("parrafo").innerHTML = textor;
-              document.getElementById("imagen").src = imgr;
-              document.getElementById("4").style.border = "1px solid black" ;
-              document.getElementById("4").style.fontSize = "60px" ;
-            }
-            
-            //Get the button
-            var mybutton = document.getElementById("myBtn");
-            
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
-            }
-            
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-            }
-            
-            </script>
+Microsoft ha puesto a disposición del público una versión "gratuita" de uso personal de Visual C++, éste es un completo entorno de desarrollo para C++, incluido en la suite de Visual Studio. Por supuesto, está orientado a aplicaciones en Windows y es uno de los más populares por su facilidad de uso, características y potencia. Posee una completa documentación que permite conocer a fondo el IDE. Requiere por lo menos Windows 7 y debemos descargar el paquete completo para poder usarlo y luego crear una cuenta para descargarlo.
+
+Puedes encontrarlo aquí : https://www.programarya.com/Cursos/C++/Sistema-de-Tipos/Tipos-Primitivos
+
+</p>
+
+<h1>¿Cómo crear y ejecutar un proyecto en Visual C++</h1>
+<p>En la mayoría de los entornos de desarrollo el proceso es bastante similar, pero aquí explicaré los detalles relevantes de esto, para que al momento de crear un proyecto, tú mismo, comprendas qué puedes cambiar cuándo y para qué.
+    Como primer paso, necesitamos abrir nuestro entorno de desarrollo, de modo que según nuestro sistema operativo, deberíamos seguir una ruta como la siguiente. Vamos a: Inicio » Todos los Programas » Microsoft Visual Studio Express » Microsoft Visual C++.
+             </p>
+<p>Una vez haya iniciado correctamente nuestro entorno de desarrollo, podremos entonces proceder a la creación del nuevo proyecto.
+    Para crear el proyecto, debemos seguir unos pasos bastante simples. En nuestra ventana principal en la parte superior tenemos una serie de opciones, debemos dar clic en: Archivo » Nuevo » Proyecto..., tal como muestra la imagen.
+    </p>
+
+<p>Hecho esto, se nos mostrará una nueva ventana donde podremos seleccionar el tipo de proyecto a crear, tenemos varias opciones, sin embargo de momento que estamos aprendiendo, lo más conveniente es crear un proyecto vacio, también allí podremos ingresar todo acerca de nuestro proyecto como: nombre, ubicación y nombre de la solución. Para este ejemplo, como nombre a nuestro proyecto, le pondremos Curso Aprender A Programar. La ubicación la podemos cambiar dando clic en examinar, sin embargo, es recomendable dejarla en la ubicación por defecto por comodidad y facilidad. El nombre de la solución, se pone automáticamente como el del proyecto, de modo que no habrá necesidad de cambiarlos nosotros mismos. Así nuestra ventana quedaría como la imagen.
+</p>
+
+<p>En cuanto hayamos rellenado correctamente los campos, podremos dar clic en aceptar. Hecho esto, se nos mostrará una vez más la ventana principal de Visual C++, sin embargo en esta ocasión podremos apreciar una estructura de carpetas en la parte izquierda de la ventana, donde podremos poner de forma ordenada cada archivo.
+    Hecho esto, podremos añadir archivos a nuestro proyecto, archivos de código fuente, archivos de cabecera y demás. Vamos a ver como añadir un archivo de código fuente a nuestro proyecto, para añadir un archivo de cabecera u otro, el proceso es el mismo. Veamos:
+    </p>
+
+<p>Hacemos clic derecho sobre la carpeta de nuestro proyecto llamada "Archivos de código fuente", luego en Agregar y finalmente en Nuevo Elemento...
+    Hecho esto, se nos mostrara una ventana pidiéndonos el tipo de archivo que vamos a crear, su nombre y ubicación. El tipo será Archivo C++ (.cpp), como nombre le pondremos también Curso Aprender A Programar y la ubicación la dejaremos tal y como nos aparece (recomiendo no cambiarla). Nuestra ventana quedaría similar a la mostrada en la imagen.
+    En cuanto tengamos nuestro proyecto creado podremos crear nuestro primer programa. A modo de prueba, vamos a ejecutar el típico Hola Mundo que vimos en la Introducción a C++ de este curso, de modo que podemos copiar de aquí el código y pegarlo en nuestro elemento de código fuente.
+    </p>
 
 
-    </body>
+
+<p>/* "Hola mundo" escrito en C++ */
+    #include "iostream"
+    using namespace std;
+    int main()
+    {
+         cout  "Hola mundo\n";
+     
+         //system("PAUSE"); Solo ponla si no te da error
+     
+         return 0;}
+   </p>
+
+
+   <p><img src="cplus.png">A</p>
+  </boody>
 </html>
