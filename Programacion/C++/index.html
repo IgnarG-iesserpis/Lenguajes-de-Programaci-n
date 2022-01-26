@@ -12,6 +12,12 @@ background-color:#fff2e6;
 border: solid black 10px;
 }
 
+.h2{
+ 
+background-color: #d8914f;
+border: solid black 8px;
+}
+
 </style>
 <body>
     
@@ -26,7 +32,7 @@ Puedes encontrarlo aquí : https://www.programarya.com/Cursos/C++/Sistema-de-Tip
 
 </p>
 
-<h1>¿Cómo crear y ejecutar un proyecto en Visual C++</h1>
+<h2>¿Cómo crear y ejecutar un proyecto en Visual C++</h2>
 <p>En la mayoría de los entornos de desarrollo el proceso es bastante similar, pero aquí explicaré los detalles relevantes de esto, para que al momento de crear un proyecto, tú mismo, comprendas qué puedes cambiar cuándo y para qué.
     Como primer paso, necesitamos abrir nuestro entorno de desarrollo, de modo que según nuestro sistema operativo, deberíamos seguir una ruta como la siguiente. Vamos a: Inicio » Todos los Programas » Microsoft Visual Studio Express » Microsoft Visual C++.
              </p>
@@ -46,21 +52,31 @@ Puedes encontrarlo aquí : https://www.programarya.com/Cursos/C++/Sistema-de-Tip
     En cuanto tengamos nuestro proyecto creado podremos crear nuestro primer programa. A modo de prueba, vamos a ejecutar el típico Hola Mundo que vimos en la Introducción a C++ de este curso, de modo que podemos copiar de aquí el código y pegarlo en nuestro elemento de código fuente.
     </p>
 
-
+<br>
 
 <p>/* "Hola mundo" escrito en C++ */
-    #include "iostream"
-    using namespace std;
-    int main()
-    {
-         cout  "Hola mundo\n";
+    #include "iostream"<br>
+    using namespace std;<br>
+    int main()<br>
+    {<br>
+         cout  "Hola mundo\n";<br>
      
-         //system("PAUSE"); Solo ponla si no te da error
+         //system("PAUSE"); Solo ponla si no te da error<br>
      
-         return 0;}
+         return 0;}<br>
    </p>
 
 
    <p><img src="cplus.png">A</p>
+<br>
+<br>
+<p>Una vez pegado el código, podremos ejecutar nuestro primer programa en C++ presionando F5. AL ejecutarlo se nos mostrará una ventana negra que es del símbolo del sistema (DOS o CMD), escribiendo Hola Mundo y una línea más abajo Press any key to continue. Para salir presionamos cualquier tecla y nuestro programa finalizará su ejecución.
+</p>
+<h2>cOMENTARIOS EN C++</h2>
+<p>Comentarios de Una Sola Línea: Pueden ser colocados en cualquier parte y comienzan por un doble slash "//", al colocar el doble slash al comienzo de cualquier línea de código, todo lo que halla de ahí en adelante en esa misma línea será tomado como comentario, ten en cuenta que el doble slash solo convierte en comentario al texto que halla después de el y que pertenezca a su misma línea, las líneas de abajo de este, no se verán afectadas.
+</p>
+<p>Comentarios Multi-línea: Van cerrados entre "/*" y "*/". Estos comentarios son similares a los anteriores, pero deben tener un comienzo y un fin
+</p>
+<p><img src="comentarios.png">B</p>
   </boody>
 </html>
