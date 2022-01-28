@@ -5,18 +5,24 @@
 
     <style>
 
-     body{
-         background-color: black;
+body{
+         background-image: url("ex.jpg");
+         background-size: cover;
      }
-    
 
-     
+     .vertical-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("php1.jpg");
+ }
+
+
 div.centro {
-    width: 20%;
+    width: 20%; 
     color:black;
 }
-.vertical-menu a {
-  background-color:rgb(121, 30, 30);
+.vertical-menu > a {
   color: white;
   display: block;
   padding: 20px;
@@ -24,12 +30,13 @@ div.centro {
   border:solid black 1px;
   width: 15%;
   text-align: center;
+  margin: 15px;
 }
-.vertical-menu a:hover {
+.vertical-menu > a:hover {
   background-color:  #da4040;
 }
 
-.vertical-menu a.active {
+.vertical-menu > a.active {
   background-color: rgb(197, 47, 47);
   color: white;
 }
@@ -44,9 +51,33 @@ img {
   width: 255px;
   height: 190px;
 }
-body {
-  background-image: url("php1.jpg");
+
+.blue {
+  background-color: rgb(34, 149, 194);
 }
+
+.purple {
+  background-color:rgb(124, 47, 124);
+}
+
+.orange{
+  background-color:orange;
+}
+
+.green {
+  background-color: rgb(64, 150, 64);
+}
+
+.excercisesyell{
+  background-color: rgb(183, 223, 91);
+}
+
+.xmlblue2{
+  background-color: rgb(38, 40, 151);
+}
+
+
+
     </style>
     </head>
     <body>
@@ -55,12 +86,12 @@ body {
     
         <div class="vertical-menu">
 
-        <a href="ejerciciosjavaScript/15JavaScript/index.html">15JavaScript</a><br>
-        <a href="ElseifJavaScript/index.html">ElseifJavaScript</a><br>
-        <a href="ForLoopJavaScript/index.html">ForLoopJavaScript</a><br>
-        <a href="LinksJavaScript/index.html">LinksJavaScript</a><br>
-        <a href="MásEjercicios/index.html">MásEjercicios</a><br>
-        <a href="SiwtchJavaScript/index.html">SiwtchJavaScript</a><br>
+        <a class="blue" href="ejerciciosjavaScript/15JavaScript/index.html">15JavaScript</a><br>
+        <a class="orange" href="ElseifJavaScript/index.html">ElseifJavaScript</a><br>
+        <a class="purple" href="ForLoopJavaScript/index.html">ForLoopJavaScript</a><br>
+        <a class="green" href="LinksJavaScript/index.html">LinksJavaScript</a><br>
+        <a class="excercisesyell" href="MásEjercicios/index.html">MásEjercicios</a><br>
+        <a class="xmlblue2" href="SiwtchJavaScript/index.html">SiwtchJavaScript</a><br>
 
 
 
