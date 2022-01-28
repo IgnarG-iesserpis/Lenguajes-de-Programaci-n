@@ -1,25 +1,68 @@
 
 <html>
+  <meta charset="UTF-8">
     <head>
-        <title>⏩ EJERCICIOS VARIOS Y TEORIA DE PHP-JAVASCRIPT-C++-HTML ⏪</title>
+        <title>⏩ 𝙀𝙅𝙀𝙍𝘾𝙄𝘾𝙄𝙊𝙎 𝙑𝘼𝙍𝙄𝙊𝙎 𝙔 𝙏𝙀𝙊𝙍𝙄𝘼 𝘿𝙀 𝙋𝙃𝙋-𝙅𝘼𝙑𝘼𝙎𝘾𝙍𝙄𝙋𝙏-𝘾++-𝙃𝙏𝙈𝙇 ⏪</title>
 
     <style>
 
-     body{
-         background-color: black;
-     }
-     .flex-container > div {
-    background-color:rgb(151, 16, 16);
-    margin: 1%;
-    padding: 2%;
-   border:solid white;
-    width:30%;
-   text-align: center;
-}      
+    
+     .vertical-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /**background-image: url("php1.jpg");**/
+ }
+
+ .vertical-menu > a {
+  color: white;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  border:solid black 1px;
+  width: 15%;
+  text-align: center;
+  margin: 15px;
+ }
+
+ .vertical-menu > a:hover{
+  background-color:  #cf4141;
+}
+.vertical-menu > a:active{
+  background-color: rgb(10, 10, 10);
+  color: white;
+}
+
+.blue {
+  background-color: rgb(34, 149, 194);
+}
+
+.purple {
+  background-color:rgb(124, 47, 124);
+}
+
+.orange{
+  background-color:orange;
+}
+
+.green {
+  background-color: rgb(64, 150, 64);
+}
+
+.excercisesyell{
+  background-color: rgb(183, 223, 91);
+}
+
+.xmlblue2{
+  background-color: rgb(38, 40, 151);
+}
+
+
 div.centro {
     width: 20%;
     color:black;
 }
+/**
 .vertical-menu1{
   background-color:rgb(51, 164, 199);
   color: white;
@@ -127,10 +170,10 @@ div.centro {
   background-color: rgb(197, 47, 47);
   color: white;
 }
-
+**/
 h1{
     color: tomato;
-     background-color: rgba(199, 185, 167, 0.774);
+     background-color: rgba(14, 13, 13, 0.774);
 }
 img {
   border: solid #ddd;
@@ -146,31 +189,14 @@ body {
     <body>
         <h1>⏩ EJERCICIOS VARIOS DE PHP-JAVASCRIPT-C++-HTML ⏪</h1>
         <hr>
-    
-        <div class="vertical-menu1">
-            <a href="C++/index.html">C++</a><br>
-         </div>
-
-        <div class="vertical-menu2">
-            <a href="PHP/index.html">PHP</a><br>
-        </div>
-
-        <div class="vertical-menu3">
-            <a href="HTML/index.html">-HTML-</a><br>
-        </div>
-
-        <div class="vertical-menu4">
-            <a href="JavaScript/index.html">JAVASCRIPT</a><br>
-        </div>
-
-        <div class="vertical-menu5">
-            <a href="Ejercicios/index.html">Ejercicios</a><br>
-        </div>
-
-        <div class="vertical-menu6">
-            <a href="XML/index.html">XML & DTD</a><br>
-        </div>
-            
+        <div class="vertical-menu">
+        <a class="blue" href="C++/index.html">C++</a>
+        <a class="purple" href="PHP/index.html">PHP</a>
+        <a class="orange" href="HTML/index.html">-HTML-</a>
+        <a class="green" href="JavaScript/index.html">JAVASCRIPT</a>
+        <a class="excercisesyell" href="Ejercicios/index.html">Ejercicios</a>
+        <a class="xmlblue2" href="XML/index.html">XML & DTD</a>
+      </div>
             <hr>
     </body>
 </html>

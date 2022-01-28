@@ -5,37 +5,33 @@
 
     <style>
 
-     body{
-         background-color: black;
-     }
-     .flex-container > div {
-    background-color:rgb(151, 16, 16);
-    margin: 1%;
-    padding: 2%;
-   border:solid white;
-    width:30%;
-   text-align: center;
-}      
+
+ 
+     .vertical-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
 div.centro {
     width: 20%;
     color:black;
 }
-.vertical-menu a {
-  background-color:rgb(121, 30, 30);
+.vertical-menu > a {
   color: white;
   display: block;
-  padding: 20px;
+  padding: 25px;
   text-decoration: none;
   border:solid black 1px;
-  width: 15%;
+  width: 25%;
   text-align: center;
-}
-.vertical-menu a:hover {
-  background-color:  #da4040;
+  margin: 15px;
 }
 
-.vertical-menu a.active {
-  background-color: rgb(197, 47, 47);
+.vertical-menu > a:hover{
+  background-color:  #cf4141;
+}
+.vertical-menu > a:active{
+  background-color: rgb(10, 10, 10);
   color: white;
 }
 
@@ -49,9 +45,20 @@ img {
   width: 255px;
   height: 190px;
 }
+
 body {
-  background-image: url("php1.jpg");
+  background-image: url("ex.jpg");
 }
+
+.blue {
+  background-color: rgb(34, 149, 194);
+}
+
+.green {
+  background-color: rgb(64, 150, 64);
+}
+
+
     </style>
     </head>
     <body>
@@ -59,8 +66,8 @@ body {
         <hr>
     
         <div class="vertical-menu">
-        <a href="Programacion/">Programación</a><br>
-        <a href="Página Web Propia/">Página WEB</a><br>
+        <a class="blue" href="Programacion/">Programación</a><br>
+        <a  class="green" href="Página Web Propia/">Página WEB</a><br>
         </div>
         <hr>
 
