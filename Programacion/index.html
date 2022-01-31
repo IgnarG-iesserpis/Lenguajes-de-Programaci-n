@@ -1,12 +1,6 @@
+<!--
 
-<html>
-  <meta charset="UTF-8">
-    <head>
-        <title>⏩ 𝙀𝙅𝙀𝙍𝘾𝙄𝘾𝙄𝙊𝙎 𝙑𝘼𝙍𝙄𝙊𝙎 𝙔 𝙏𝙀𝙊𝙍𝙄𝘼 𝘿𝙀 𝙋𝙃𝙋-𝙅𝘼𝙑𝘼𝙎𝘾𝙍𝙄𝙋𝙏-𝘾++-𝙃𝙏𝙈𝙇 ⏪</title>
 
-    <style>
-
-    
      .vertical-menu{
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +8,7 @@
     /**background-image: url("php1.jpg");**/
     background-color: rgba(172, 255, 47, 0.644);
  }
-
+/*
  .vertical-menu > a {
   color: white;
   display: block;
@@ -62,8 +56,8 @@
 div.centro {
     width: 20%;
     color:black;
-}
-/**
+
+
 .vertical-menu1{
   background-color:rgb(51, 164, 199);
   color: white;
@@ -171,7 +165,7 @@ div.centro {
   background-color: rgb(197, 47, 47);
   color: white;
 }
-**/
+
 h1{
     color: tomato;
      background-color: rgba(14, 13, 13, 0.774);
@@ -185,7 +179,7 @@ img {
 body {
   background-image: url("ex.jpg");
   background-size: cover;
-}
+} 
     </style>
     </head>
     <body>
@@ -201,4 +195,221 @@ body {
       </div>
             <hr>
     </body>
+</html> 
+  -->
+
+
+ <!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <title>KERNELPANIK</title>
+            <link rel="stylesheet" href="style.css" />
+            <link rel= "icon" href= "https://image.flaticon.com/icons/png/128/1999/1999074.png"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            
+        </head>
+        <style>
+/* Basic */
+* {
+    box-sizing:border-box;
+  }
+ 
+  /* Buttons */
+  .btn {
+      border: none;
+      position: relative;
+      background: none;
+      padding: 28px 90px;
+      display: inline-block;
+      text-transform: uppercase;
+      margin: 30px;
+      color: inherit;
+      letter-spacing: 2px;
+      font-size: 0.9em;
+      outline: none;
+      transition: all 0.4s;
+      cursor: pointer;
+  }
+  
+  .btn:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      transition: all 04.s;
+  }
+  
+  .btn-perspective {
+      perspective: 800px;
+      display: inline-block;
+  }
+  
+  .btn-3d {
+      color: #fff;
+      display: block;
+      outline: 1px solid transparent;
+      transform-style: preserve-3d;
+  }
+  /* Button Zero */
+  .btn-zero {
+      background-color: #eef864d3;
+      width: 100%;
+      padding: 2px;
+      margin: 15px;
+      text-align: center;
+
+  }
+  .btn-zero:after {
+    
+      left: 0;
+      top: -40%;
+      background: #bae913b9;
+      transform-origin: 25% 100%;
+  }
+
+  /* Button One */
+  .btn-one {
+      background-color: #ee222dc0;
+  }
+  .btn-one:after {
+      width: 100%;
+      height: 42%;
+      left: 0;
+      top: -40%;
+      background: #d4240c;
+      transform-origin: 0% 100%;
+      transform: rotateX(90deg);
+  }
+  .btn-one:hover {
+      transform: rotateX(-45deg);   
+  }
+  
+  /* Button Two */
+  .btn-two {
+      background-color: #22eeeeb6;
+  }
+  .btn-two:after {
+      width: 100%;
+      height: 40%;
+      left: 0;
+      top: 100%;
+      background: #2980D9;
+      transform-origin: 0% 0%;
+      transform: rotateX(-90deg);
+  }
+  .btn-two:hover {
+      transform: rotateX(35deg);   
+  }
+  
+  /* Button Three */
+  .btn-three {
+      background-color: rgba(173, 54, 173, 0.767);
+  }
+  .btn-three:after {
+      width: 20%;
+      height: 100%;
+      left: -20%;
+      top: 0;
+      background: #b91bd8;
+      transform-origin:100% 0%;
+      transform: rotateY(-90deg);
+  }
+  .btn-three:hover {
+      transform: rotateY(25deg);   
+  }
+  
+  /* Button Four */
+  .btn-four {
+      background-color: #2dbd69c4;
+  }
+  .btn-four:after {
+      width: 20%;
+      height: 100%;
+      left: 100%;
+      top: 0;
+      background: #4bcf22ec;
+      transform-origin: 0% 0%;
+      transform: rotateY(90deg);
+  }
+  .btn-four:hover {
+      transform: rotateY(-25deg);
+  }
+ 
+  body {
+  background-image: url("ex.jpg");
+}
+  .bordes{
+border-color: black;
+  }
+
+  h1{
+    color: rgb(2, 2, 2);
+    background-color: rgba(206, 218, 221, 0.658);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  #myCanvas {
+    background: rgba(233, 49, 111, 0.897);
+    display: block;
+    margin: 0 auto;
+  }
+
+        </style>
+        <body>
+          <h1>⏩ 𝑬𝑱𝑬𝑹𝑪𝑰𝑪𝑰𝑶𝑺 𝑽𝑨𝑹𝑰𝑶𝑺 𝑫𝑬 𝑷𝑯𝑷-𝑱𝑨𝑽𝑨𝑺𝑪𝑹𝑰𝑷𝑻-𝑪++-𝑯𝑻𝑴𝑳 ⏪</h1><hr><br>
+          <br><hr><br><br><br><br<br>
+            <div class="btn-zero">
+                <!-- Button One -->
+                <div class="btn-perspective ">
+                  <button class="btn btn-3d btn-one bordes">
+                  <a  href="C++/index.html">𝑪++</a><br>
+                
+                </div>
+            
+                <!-- Button Two -->
+                <div class="btn-perspective">
+                  <button class="btn btn-3d btn-two">
+                  <a  class="green" href="PHP/index.html">𝑷𝑯𝑷</a><br>
+              
+
+                </div>
+                
+                <!-- Button Three -->
+                <div class="btn-perspective">
+                  <button class="btn btn-3d btn-three">
+                  <a  class="red" href="HTML/index.html">𝑯𝑻𝑴𝑳</a><br>
+                </div>
+            
+                <!-- Button Four -->
+                <div class="btn-perspective">
+                  <button class="btn btn-3d btn-four">
+                  <a  class="purple" href="JavaScript/index.html">𝑱𝒂𝒗𝒂𝑺𝒄𝒓𝒊𝒑𝒕</a><br>
+                
+                </div>
+
+                <!-- Button Three -->
+                <div class="btn-perspective">
+                  <button class="btn btn-3d btn-three">
+                  <a  class="red" href="Ejercicios/index.html">𝑬𝒋𝒆𝒓𝒄𝒊𝒄𝒊𝒐𝒔</a><br>
+                </div>
+            
+                <!-- Button Four -->
+                <div class="btn-perspective">
+                  <button class="btn btn-3d btn-four">
+                  <a  class="purple" href="XML/index.html">𝑿𝑴𝑳 & 𝑫𝑻𝑫</a><br>
+                
+                </div>
+            
+            </div> <br><br><br>
+</body>
 </html>
+
+
+
+
+
+

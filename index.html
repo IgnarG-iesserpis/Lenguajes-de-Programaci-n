@@ -90,9 +90,9 @@ body {
         <head>
             <meta charset="UTF-8" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            
-            <title>3d Animation Buttom</title>
+            <title>KERNELPANIK</title>
             <link rel="stylesheet" href="style.css" />
+            <link rel= "icon" href= "https://image.flaticon.com/icons/png/128/1999/1999074.png"/>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             
         </head>
@@ -101,37 +101,7 @@ body {
 * {
     box-sizing:border-box;
   }
-  .vertical-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: rgba(189, 211, 62, 0.658);
- }
-div.centro {
-    width: 20%;
-    color:black;
-}
-.vertical-menu > a {
-  color: white;
-  display: block;
-  padding: 25px;
-  text-decoration: none;
-  border:solid black 1px;
-  width: 25%;
-  text-align: center;
-  margin: 15px;
-}
-
-.vertical-menu > a:hover{
-  background-color:  #cf4141;
-}
-.vertical-menu > a:active{
-  background-color: rgb(10, 10, 10);
-  color: white;
-}
-  
-  
-  
+ 
   /* Buttons */
   .btn {
       border: none;
@@ -167,18 +137,36 @@ div.centro {
       outline: 1px solid transparent;
       transform-style: preserve-3d;
   }
-  
+  /* Button Zero */
+  .btn-zero {
+      background-color: #eef864d3;
+      width: 100%;
+      padding: 2px;
+      margin: 15px;
+      text-align: center;
+
+  }
+  .btn-zero:after {
+    
+      left: 0;
+      top: -40%;
+      background: #bae913b9;
+      transform-origin: 25% 100%;
+  }
+  /**.btn-zero:hover {
+      transform: rotateZ(-25deg);   
+  }**/
   
   /* Button One */
   .btn-one {
-      background-color: #E74C3C;
+      background-color: #ee222dc0;
   }
   .btn-one:after {
       width: 100%;
       height: 42%;
       left: 0;
       top: -40%;
-      background: #C0392D;
+      background: #d4240c;
       transform-origin: 0% 100%;
       transform: rotateX(90deg);
   }
@@ -188,7 +176,7 @@ div.centro {
   
   /* Button Two */
   .btn-two {
-      background-color: #3498DB;
+      background-color: #22eeeeb6;
   }
   .btn-two:after {
       width: 100%;
@@ -205,14 +193,14 @@ div.centro {
   
   /* Button Three */
   .btn-three {
-      background-color: #C9C;
+      background-color: rgba(173, 54, 173, 0.767);
   }
   .btn-three:after {
       width: 20%;
       height: 100%;
       left: -20%;
       top: 0;
-      background: #5e0abe;
+      background: #b91bd8;
       transform-origin:100% 0%;
       transform: rotateY(-90deg);
   }
@@ -222,49 +210,59 @@ div.centro {
   
   /* Button Four */
   .btn-four {
-      background-color: #7f13aa;
+      background-color: #2dbd69c4;
   }
   .btn-four:after {
       width: 20%;
       height: 100%;
       left: 100%;
       top: 0;
-      background: #8E44AD;
+      background: #4bcf22ec;
       transform-origin: 0% 0%;
       transform: rotateY(90deg);
   }
   .btn-four:hover {
       transform: rotateY(-25deg);
   }
-  footer{
-      align:center;
-      color: red;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-weight: bolder;
-      font-size: xx-large;
-      font-style: inherit;
-      font-stretch: semi-condensed;
-  }
-
+ 
   body {
   background-image: url("ex.jpg");
 }
+  .bordes{
+border-color: black;
+  }
+
+  h1{
+    color: rgb(2, 2, 2);
+    background-color: rgba(206, 218, 221, 0.658);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  #myCanvas {
+    background: rgba(233, 49, 111, 0.897);
+    display: block;
+    margin: 0 auto;
+  }
 
         </style>
         <body>
-          <h1>⏩ EJERCICIOS VARIOS DE PHP-JAVASCRIPT-C++-HTML ⏪</h1>
-            <div class="vertical-menu">
+          <h1>⏩ 𝑬𝑱𝑬𝑹𝑪𝑰𝑪𝑰𝑶𝑺 𝑽𝑨𝑹𝑰𝑶𝑺 𝑫𝑬 𝑷𝑯𝑷-𝑱𝑨𝑽𝑨𝑺𝑪𝑹𝑰𝑷𝑻-𝑪++-𝑯𝑻𝑴𝑳 ⏪</h1><hr><br>
+          <br><hr><br><br><br><br<br>
+            <div class="btn-zero">
                 <!-- Button One -->
                 <div class="btn-perspective ">
-                  <button class="btn btn-3d btn-one">
-                  <a class="blue" href="Programacion/">Programación</a><br>
+                  <button class="btn btn-3d btn-one bordes">
+                  <a  href="Programacion/">𝑷𝒓𝒐𝒈𝒓𝒂𝒎𝒂𝒄𝒊𝒐𝒏</a><br>
                 
                 </div>
             
                 <!-- Button Two -->
                 <div class="btn-perspective">
                   <button class="btn btn-3d btn-two">
-                  <a  class="green" href="Página Web Propia/">Página WEB</a><br>
+                  <a  class="green" href="Página Web Propia/">𝑷𝒂𝒈𝒊𝒏𝒂 𝑾𝒆𝒃</a><br>
               
 
                 </div>
@@ -272,20 +270,197 @@ div.centro {
                 <!-- Button Three -->
                 <div class="btn-perspective">
                   <button class="btn btn-3d btn-three">
-                  <a  class="red" href="Página Web Vista/index.html">Página WEB Vista</a><br>
+                  <a  class="red" href="Página Web Vista/index.html">𝑷𝒂𝒈𝒊𝒏𝒂 𝑾𝒆𝒃 𝑽𝒊𝒔𝒕𝒂</a><br>
                 </div>
             
                 <!-- Button Four -->
                 <div class="btn-perspective">
                   <button class="btn btn-3d btn-four">
-                  <a  class="purple" href="Negocios/">Negocios</a><br>
+                  <a  class="purple" href="Negocios/">𝑵𝒆𝒈𝒐𝒄𝒊𝒐𝒔</a><br>
                 
                 </div>
             
-            </div>
+            </div> <br><br><br>
          <!--
  <footer>Created by Naman</footer>
          -->  
+         <canvas id="myCanvas" width="480" height="320"></canvas>
+    
+         <script>
+
+var canvas = document.getElementById('myCanvas');
+var ctx = canvas.getContext('2d');
+
+var x = canvas.width / 2;
+var y = canvas.height - 30; 
+
+var dx = 2;
+var dy = -2;
+var ballRadius = 10;
+var paddleHeight = 10;
+var paddleWidth = 75;
+var paddleX = (canvas.width - paddleWidth) / 2;
+var rightPressed = false;
+var leftPressed = false;
+var brickRowCount = 3;
+var brickColumnCount = 5;
+var brickWidth = 75;
+var brickHeight = 20;
+var brickPadding = 10;
+var brickOffsetTop = 30;
+var brickOffsetLeft = 30;
+var score = 0;
+var lives = 3;
+
+var bricks = [];
+for (c = 0; c < brickColumnCount; c++) {
+  bricks[c] = [];
+  for (r = 0; r < brickRowCount; r++) {
+    bricks[c][r] = {
+      x: 0,
+      y: 0,
+      status: 1
+    };
+  }
+}
+
+document.addEventListener("keydown", keyDownHandler);
+document.addEventListener("keyup", keyUpHandler);
+
+function keyDownHandler(e) {
+  if (e.keyCode === 39) {
+    rightPressed = true;
+  } else if (e.keyCode === 37) {
+    leftPressed = true;
+  }
+}
+
+function keyUpHandler(e) {
+  if (e.keyCode === 39) {
+    rightPressed = false;
+  } else if (e.keyCode === 37) {
+    leftPressed = false;
+  }
+}
+
+function drawBricks() {
+  for (c = 0; c < brickColumnCount; c++) {
+    for (r = 0; r < brickRowCount; r++) {
+      if (bricks[c][r].status === 1) {
+        var brickX = (c * (brickWidth + brickPadding)) + brickOffsetLeft;
+        var brickY = (r * (brickHeight + brickPadding)) + brickOffsetTop;
+        bricks[c][r].x = brickX;
+        bricks[c][r].y = brickY;
+        ctx.beginPath();
+        ctx.rect(brickX, brickY, brickWidth, brickHeight);
+        ctx.fillStyle = "#0095DD";
+        ctx.fill();
+        ctx.closePath();
+      }
+    }
+  }
+}
+
+function drawBall() {
+  ctx.beginPath();
+  ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+  ctx.fillStyle = "#0095DD";
+  ctx.fill();
+  ctx.closePath(); // ball is drawn
+}
+
+function drawPaddle() {
+  ctx.beginPath();
+  ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+  ctx.fillStyle = "#0095DD";
+  ctx.fill();
+  ctx.closePath();
+}
+
+function collisionDetection() {
+  for (c = 0; c < brickColumnCount; c++) {
+    for (r = 0; r < brickRowCount; r++) {
+      var b = bricks[c][r];
+      if (b.status === 1) {
+        if (x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight) {
+          dy = -dy;
+          b.status = 0;
+          score++;
+          if (score === brickRowCount * brickColumnCount) {
+            ("YOU WIN!");
+          document.location.reload();
+          
+          }
+        }
+      }
+    }
+  }
+}
+
+function drawScore() {
+  ctx.font = "16px Arial";
+  ctx.fillStyle = "0095DD";
+  ctx.fillText("Score: " + score, 8, 20);
+}
+
+function drawLives() {
+  ctx.font = "16px Arial";
+  ctx.fillStyle = "0095DD";
+  ctx.fillText("Lives: " + lives, canvas.width - 65, 20);
+}
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawBricks();
+  drawBall();
+  drawPaddle();
+  drawScore();
+  drawLives();
+  collisionDetection();
+
+  if (y + dy < ballRadius) { //bouncing off top and bottom of canvas
+    dy = -dy
+  } else if (y + dy > canvas.height - ballRadius) {
+    if (x > paddleX && x < paddleX + paddleWidth) {
+      dy = -dy;
+    } else {
+      lives--;
+      if (!lives) {
+        ("GAME OVER");
+        document.location.reload();
+      } else {
+        x = canvas.width / 2;
+        y = canvas.height - 30;
+        dx = 2;
+        dy = -2;
+        paddleX = (canvas.width - paddleWidth) / 2;
+      }
+    }
+  }
+  if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+    dx = -dx
+  }
+
+  if (rightPressed && paddleX < canvas.width - paddleWidth) {
+    paddleX += 7;
+  } else if (leftPressed && paddleX > 0) {
+    paddleX -= 7;
+  }
+
+  x += dx; 
+  y += dy; 
+  requestAnimationFrame(draw);
+}
+document.addEventListener("mousemove", mouseMoveHandler);
+
+function mouseMoveHandler(e) {
+  var relativeX = e.clientX - canvas.offsetLeft;
+  if (relativeX > 0 + paddleWidth / 2 && relativeX < canvas.width - paddleWidth / 2) {
+    paddleX = relativeX - paddleWidth / 2;
+  }
+}
+draw();
+         </script>
 </body>
 </html>
 
